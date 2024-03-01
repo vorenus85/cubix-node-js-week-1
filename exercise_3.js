@@ -1,13 +1,12 @@
 function power(numA, numB) {
   const subResults = [];
-  const powerResult = Math.pow(numA, numB);
 
   for (let i = 0; i < numB; i++) {
     subResults.push(Math.pow(numA, i));
   }
 
   return {
-    result: powerResult,
+    result: Math.pow(numA, numB),
     subResults,
   };
 }
