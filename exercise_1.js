@@ -18,7 +18,7 @@ function separateByType(list, bucket) {
     }
 
     if (type === "object") {
-      if (element instanceof Array) {
+      if (Array.isArray(element)) {
         bucket.list.push(element);
       } else {
         bucket.object.push(element);
