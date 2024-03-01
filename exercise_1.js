@@ -9,11 +9,11 @@ function separateByType(list, bucket) {
       bucket.bool.push(element);
     }
 
-    if (type === "number") {
+    if (type === "string") {
       bucket.string.push(element);
     }
 
-    if (type === "string") {
+    if (type === "number") {
       bucket.number.push(element);
     }
 
